@@ -69,16 +69,16 @@ const Sidebar = () => {
     <>
       {/* Mobile Header - Only show on mobile */}
       {isMobile && (
-        <div className="lg:hidden fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-[#996600]/20 z-40">
+        <div className="lg:hidden fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-[#336600]/20 z-40">
           <div className="flex items-center justify-between p-4">
             <div>
-              <h2 className="text-xl font-bold bg-gradient-to-r from-[#996600] to-[#7a5200] bg-clip-text text-transparent">
+              <h2 className="text-xl font-bold bg-gradient-to-r from-[#336600] to-[#2a5200] bg-clip-text text-transparent">
                 Admin Panel
               </h2>
             </div>
             <button
               onClick={toggleMobileMenu}
-              className="p-2 text-[#996600] hover:text-[#7a5200]"
+              className="p-2 text-[#336600] hover:text-[#2a5200]"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -101,13 +101,13 @@ const Sidebar = () => {
           : 'sticky top-0 h-screen'
         }
         ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
-        bg-white/95 backdrop-blur-xl text-slate-800 w-64 flex-shrink-0 border-r border-[#996600]/20
+        bg-white/95 backdrop-blur-xl text-slate-800 w-64 flex-shrink-0 border-r border-[#336600]/20
         flex flex-col overflow-hidden
       `}>
         <div className="p-6 flex flex-col h-full overflow-hidden">
           {/* Header - Fixed */}
           <div className="flex-shrink-0 mb-8 pt-4 pl-2">
-            <h2 className="text-2xl font-bold bg-gradient-to-r from-[#996600] to-[#7a5200] bg-clip-text text-transparent">
+            <h2 className="text-2xl font-bold bg-gradient-to-r from-[#336600] to-[#2a5200] bg-clip-text text-transparent">
               Admin Panel
             </h2>
             <p className="text-slate-500 text-sm mt-2">Welcome back!</p>
@@ -115,7 +115,7 @@ const Sidebar = () => {
             {/* View Website Button */}
             <button
               onClick={openWebsite}
-              className="mt-4 w-full bg-gradient-to-r from-[#996600] to-[#7a5200] text-white px-4 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 hover:from-[#7a5200] hover:to-[#664200] transition-all duration-200 hover:shadow-md cursor-pointer"
+              className="mt-4 w-full bg-gradient-to-r from-[#336600] to-[#2a5200] text-white px-4 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 hover:from-[#2a5200] hover:to-[#1e3d00] transition-all duration-200 hover:shadow-md cursor-pointer"
             >
               <Eye size={18} />
               View Website
@@ -136,14 +136,14 @@ const Sidebar = () => {
                       onClick={closeMobileMenu}
                       className={`group flex items-center px-4 py-3 rounded-xl transition-all duration-200 ease-out ${
                         isActive
-                          ? 'bg-white text-[#996600] shadow-md border border-[#996600]/30'
-                          : 'text-slate-600 hover:bg-white/80 hover:text-[#996600] hover:shadow-sm'
+                          ? 'bg-white text-[#336600] shadow-md border border-[#336600]/30'
+                          : 'text-slate-600 hover:bg-white/80 hover:text-[#336600] hover:shadow-sm'
                       }`}
                     >
                       <span className={`mr-3 text-lg transition-transform duration-200 ${
                         isActive ? 'scale-100' : 'group-hover:scale-105'
                       }`}>
-                        <Icon size={20} className={isActive ? 'text-[#996600]' : 'group-hover:text-[#996600]'} />
+                        <Icon size={20} className={isActive ? 'text-[#336600]' : 'group-hover:text-[#336600]'} />
                       </span>
                       
                       <span className="font-medium tracking-wide transition-all duration-200">
@@ -151,11 +151,11 @@ const Sidebar = () => {
                       </span>
                       
                       {isActive && (
-                        <div className="ml-auto w-1.5 h-1.5 bg-[#996600] rounded-full" />
+                        <div className="ml-auto w-1.5 h-1.5 bg-[#336600] rounded-full" />
                       )}
                       
                       {!isActive && (
-                        <div className="ml-auto w-1 h-5 bg-[#996600]/30 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200" />
+                        <div className="ml-auto w-1 h-5 bg-[#336600]/30 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200" />
                       )}
                     </Link>
                   </li>
@@ -165,7 +165,7 @@ const Sidebar = () => {
           </nav>
 
           {/* Footer - Fixed */}
-          <div className="flex-shrink-0 mt-auto pt-6 border-t border-[#996600]/20">
+          <div className="flex-shrink-0 mt-auto pt-6 border-t border-[#336600]/20">
             {/* Logout Button */}
             <button
               onClick={handleLogout}

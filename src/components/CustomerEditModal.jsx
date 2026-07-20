@@ -81,7 +81,7 @@ const CustomerEditModal = ({ customer, onClose, onUpdate }) => {
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">
-                  <User className="inline w-4 h-4 mr-1 text-[#996600]" />
+                  <User className="inline w-4 h-4 mr-1 text-[#336600]" />
                   Full Name *
                 </label>
                 <input
@@ -89,14 +89,14 @@ const CustomerEditModal = ({ customer, onClose, onUpdate }) => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#996600] focus:border-transparent"
+                  className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#336600] focus:border-transparent"
                   required
                 />
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">
-                  <Mail className="inline w-4 h-4 mr-1 text-[#996600]" />
+                  <Mail className="inline w-4 h-4 mr-1 text-[#336600]" />
                   Email Address *
                 </label>
                 <input
@@ -104,14 +104,14 @@ const CustomerEditModal = ({ customer, onClose, onUpdate }) => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#996600] focus:border-transparent"
+                  className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#336600] focus:border-transparent"
                   required
                 />
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">
-                  <Phone className="inline w-4 h-4 mr-1 text-[#996600]" />
+                  <Phone className="inline w-4 h-4 mr-1 text-[#336600]" />
                   Phone Number
                 </label>
                 <input
@@ -119,7 +119,7 @@ const CustomerEditModal = ({ customer, onClose, onUpdate }) => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#996600] focus:border-transparent"
+                  className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#336600] focus:border-transparent"
                 />
               </div>
 
@@ -131,7 +131,7 @@ const CustomerEditModal = ({ customer, onClose, onUpdate }) => {
                   name="role"
                   value={formData.role}
                   onChange={handleChange}
-                  className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#996600] focus:border-transparent"
+                  className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#336600] focus:border-transparent"
                   required
                 >
                   <option value="user">User</option>
@@ -147,7 +147,7 @@ const CustomerEditModal = ({ customer, onClose, onUpdate }) => {
                   name="isGuest"
                   checked={formData.isGuest}
                   onChange={handleChange}
-                  className="w-4 h-4 text-[#996600] rounded focus:ring-[#996600]"
+                  className="w-4 h-4 text-[#336600] rounded focus:ring-[#336600]"
                 />
                 <label htmlFor="isGuest" className="text-sm text-slate-700">
                   This is a guest account
@@ -171,7 +171,7 @@ const CustomerEditModal = ({ customer, onClose, onUpdate }) => {
             </button>
             <button
               type="submit"
-              className="px-4 py-2.5 bg-[#996600] text-white rounded-lg font-medium hover:bg-[#7a5200] transition-colors flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-4 py-2.5 bg-[#336600] text-white rounded-lg font-medium hover:bg-[#2a5200] transition-colors flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={loading}
             >
               <Save className="w-4 h-4" />

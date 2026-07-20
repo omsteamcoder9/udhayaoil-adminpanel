@@ -85,7 +85,7 @@ const AddCategoryModal = ({ isOpen, onClose, onAddCategory }) => {
           <h2 className="text-lg font-semibold text-gray-800">Add Category</h2>
           <button 
             onClick={onClose} 
-            className="text-gray-400 hover:text-[#996600] transition-colors"
+            className="text-gray-400 hover:text-[#336600] transition-colors"
           >
             ✕
           </button>
@@ -104,7 +104,7 @@ const AddCategoryModal = ({ isOpen, onClose, onAddCategory }) => {
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
               Category Image
             </label>
-            <div className="border-2 border-dashed border-gray-300 rounded-lg p-3 hover:border-[#996600] transition-colors">
+            <div className="border-2 border-dashed border-gray-300 rounded-lg p-3 hover:border-[#336600] transition-colors">
               {imagePreview ? (
                 <div className="relative inline-block">
                   <img
@@ -123,7 +123,7 @@ const AddCategoryModal = ({ isOpen, onClose, onAddCategory }) => {
               ) : (
                 <label className="flex flex-col items-center cursor-pointer">
                   <ImageIcon size={28} className="text-gray-400" />
-                  <span className="text-xs text-[#996600] mt-1">Upload Image</span>
+                  <span className="text-xs text-[#336600] mt-1">Upload Image</span>
                   <input
                     type="file"
                     className="hidden"
@@ -147,7 +147,7 @@ const AddCategoryModal = ({ isOpen, onClose, onAddCategory }) => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#996600] focus:border-transparent text-sm"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#336600] focus:border-transparent text-sm"
               placeholder="Enter category name"
             />
           </div>
@@ -163,7 +163,7 @@ const AddCategoryModal = ({ isOpen, onClose, onAddCategory }) => {
               onChange={handleChange}
               required
               rows="2"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#996600] focus:border-transparent text-sm resize-none"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#336600] focus:border-transparent text-sm resize-none"
               placeholder="Enter category description"
             />
           </div>
@@ -177,7 +177,7 @@ const AddCategoryModal = ({ isOpen, onClose, onAddCategory }) => {
               name="status"
               value={formData.status}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#996600] focus:border-transparent text-sm"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#336600] focus:border-transparent text-sm"
             >
               <option value="active">Active</option>
               <option value="inactive">Inactive</option>
@@ -196,7 +196,7 @@ const AddCategoryModal = ({ isOpen, onClose, onAddCategory }) => {
             <button
               type="submit"
               disabled={loading}
-              className="px-4 py-2 text-sm font-medium text-white bg-[#996600] rounded-lg hover:bg-[#7a5200] disabled:opacity-50 transition-colors"
+              className="px-4 py-2 text-sm font-medium text-white bg-[#336600] rounded-lg hover:bg-[#2a5200] disabled:opacity-50 transition-colors"
             >
               {loading ? 'Adding...' : 'Add'}
             </button>

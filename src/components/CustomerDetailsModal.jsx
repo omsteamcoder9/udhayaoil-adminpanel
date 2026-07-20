@@ -48,7 +48,7 @@ const CustomerDetailsModal = ({ customer, onClose, onDeactivate, onDelete }) => 
         <div className="p-6">
           {/* Profile Header */}
           <div className="flex items-start gap-4 mb-6">
-            <div className="w-20 h-20 bg-gradient-to-r from-[#996600] to-[#7a5200] rounded-full flex items-center justify-center text-white text-2xl font-bold">
+            <div className="w-20 h-20 bg-gradient-to-r from-[#336600] to-[#2a5200] rounded-full flex items-center justify-center text-white text-2xl font-bold">
               {customer.name?.charAt(0).toUpperCase() || 'U'}
             </div>
             <div className="flex-1">
@@ -58,7 +58,7 @@ const CustomerDetailsModal = ({ customer, onClose, onDeactivate, onDelete }) => 
                 <span className={`px-3 py-1 rounded-full text-sm font-medium ${customer.isActive ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
                   {customer.isActive ? 'Active' : 'Inactive'}
                 </span>
-                <span className="px-3 py-1 bg-[#996600]/10 text-[#996600] border border-[#996600]/20 rounded-full text-sm font-medium capitalize">
+                <span className="px-3 py-1 bg-[#336600]/10 text-[#336600] border border-[#336600]/20 rounded-full text-sm font-medium capitalize">
                   {customer.role || 'customer'}
                 </span>
               </div>
@@ -68,14 +68,14 @@ const CustomerDetailsModal = ({ customer, onClose, onDeactivate, onDelete }) => 
           {/* Information Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {/* Contact Information */}
-            <div className="bg-slate-50 rounded-xl p-5 border border-[#996600]/10">
+            <div className="bg-slate-50 rounded-xl p-5 border border-[#336600]/10">
               <h4 className="font-semibold text-slate-800 mb-4 flex items-center gap-2">
-                <Mail className="w-5 h-5 text-[#996600]" />
+                <Mail className="w-5 h-5 text-[#336600]" />
                 Contact Information
               </h4>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
-                  <Mail className="w-4 h-4 text-[#996600]" />
+                  <Mail className="w-4 h-4 text-[#336600]" />
                   <div>
                     <p className="text-sm text-slate-500">Email</p>
                     <p className="font-medium">{customer.email}</p>
@@ -83,7 +83,7 @@ const CustomerDetailsModal = ({ customer, onClose, onDeactivate, onDelete }) => 
                 </div>
                 {customer.phone && (
                   <div className="flex items-center gap-3">
-                    <Phone className="w-4 h-4 text-[#996600]" />
+                    <Phone className="w-4 h-4 text-[#336600]" />
                     <div>
                       <p className="text-sm text-slate-500">Phone</p>
                       <p className="font-medium">{customer.phone}</p>
@@ -94,21 +94,21 @@ const CustomerDetailsModal = ({ customer, onClose, onDeactivate, onDelete }) => 
             </div>
 
             {/* Account Information */}
-            <div className="bg-slate-50 rounded-xl p-5 border border-[#996600]/10">
+            <div className="bg-slate-50 rounded-xl p-5 border border-[#336600]/10">
               <h4 className="font-semibold text-slate-800 mb-4 flex items-center gap-2">
-                <Shield className="w-5 h-5 text-[#996600]" />
+                <Shield className="w-5 h-5 text-[#336600]" />
                 Account Information
               </h4>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
-                  <Calendar className="w-4 h-4 text-[#996600]" />
+                  <Calendar className="w-4 h-4 text-[#336600]" />
                   <div>
                     <p className="text-sm text-slate-500">Joined</p>
                     <p className="font-medium">{formatDate(customer.createdAt)}</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Calendar className="w-4 h-4 text-[#996600]" />
+                  <Calendar className="w-4 h-4 text-[#336600]" />
                   <div>
                     <p className="text-sm text-slate-500">Last Updated</p>
                     <p className="font-medium">{formatDate(customer.updatedAt)}</p>
@@ -120,9 +120,9 @@ const CustomerDetailsModal = ({ customer, onClose, onDeactivate, onDelete }) => 
 
           {/* Additional Information */}
           {customer.address && (
-            <div className="bg-slate-50 rounded-xl p-5 mb-6 border border-[#996600]/10">
+            <div className="bg-slate-50 rounded-xl p-5 mb-6 border border-[#336600]/10">
               <h4 className="font-semibold text-slate-800 mb-4 flex items-center gap-2">
-                <MapPin className="w-5 h-5 text-[#996600]" />
+                <MapPin className="w-5 h-5 text-[#336600]" />
                 Address
               </h4>
               <div className="text-slate-700">

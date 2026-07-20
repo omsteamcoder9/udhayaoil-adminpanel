@@ -544,7 +544,7 @@ const saveRazorpayKeys = async () => {
       <div className="flex min-h-screen">
         <Sidebar />
         <div className="flex-1 flex items-center justify-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#996600]"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#336600]"></div>
         </div>
       </div>
     );
@@ -613,7 +613,7 @@ const saveRazorpayKeys = async () => {
                 <div className="p-4 sm:p-6">
                   <div className="flex justify-between items-center mb-4">
                     <div className="flex items-center">
-                      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-[#996600] to-[#7a5200] rounded-lg flex items-center justify-center mr-2 sm:mr-3">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-[#336600] to-[#2a5200] rounded-lg flex items-center justify-center mr-2 sm:mr-3">
                         <CreditCard size={16} className="sm:w-5 sm:h-5 text-white" />
                       </div>
                       <h3 className="text-lg sm:text-xl font-semibold text-gray-900">
@@ -638,7 +638,7 @@ const saveRazorpayKeys = async () => {
                         type="text"
                         value={razorpayKeyIdInput}
                         onChange={(e) => setRazorpayKeyIdInput(e.target.value)}
-                        className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                        className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                         placeholder="rzp_test_XXXXXXXXXXXXX"
                         autoFocus
                       />
@@ -657,7 +657,7 @@ const saveRazorpayKeys = async () => {
                           type={showSecretModalInput ? "text" : "password"}
                           value={razorpayKeySecretInput}
                           onChange={(e) => setRazorpayKeySecretInput(e.target.value)}
-                          className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600] pr-10"
+                          className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600] pr-10"
                           placeholder="Enter your Razorpay Secret Key"
                         />
                         <button
@@ -686,7 +686,7 @@ const saveRazorpayKeys = async () => {
   type="button"
   onClick={saveRazorpayKeys}
   disabled={saving}
-  className="flex-1 px-3 py-2 text-sm bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded-lg hover:from-[#7a5200] hover:to-[#5a3b00] flex items-center justify-center gap-1 disabled:opacity-50 disabled:cursor-not-allowed"
+  className="flex-1 px-3 py-2 text-sm bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded-lg hover:from-[#2a5200] hover:to-[#1e3d00] flex items-center justify-center gap-1 disabled:opacity-50 disabled:cursor-not-allowed"
 >
   {saving ? (
     <>
@@ -720,7 +720,7 @@ const saveRazorpayKeys = async () => {
                         onClick={() => setActiveTab(tab.id)}
                         className={`flex items-center px-3 sm:px-6 py-3 font-medium text-xs sm:text-sm transition-all duration-200 whitespace-nowrap flex-shrink-0 ${
                           activeTab === tab.id
-                            ? 'text-[#996600] border-b-2 border-[#996600]'
+                            ? 'text-[#336600] border-b-2 border-[#336600]'
                             : 'text-gray-500 hover:text-gray-700'
                         }`}
                       >
@@ -750,7 +750,7 @@ const saveRazorpayKeys = async () => {
                               name="siteName"
                               value={settings.siteName}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="My E-commerce Store"
                             />
                           </div>
@@ -763,7 +763,7 @@ const saveRazorpayKeys = async () => {
                               name="siteTitle"
                               value={settings.siteTitle}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Best Online Shopping Store"
                             />
                           </div>
@@ -776,7 +776,7 @@ const saveRazorpayKeys = async () => {
                               value={settings.siteDescription}
                               onChange={handleInputChange}
                               rows="2"
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Your one-stop shop for everything"
                             />
                           </div>
@@ -799,7 +799,7 @@ const saveRazorpayKeys = async () => {
                               onChange={handleInputChange}
                               className="sr-only peer"
                             />
-                            <div className="w-10 h-5 sm:w-11 sm:h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 sm:after:h-5 sm:after:w-5 after:transition-all peer-checked:bg-[#996600]"></div>
+                            <div className="w-10 h-5 sm:w-11 sm:h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 sm:after:h-5 sm:after:w-5 after:transition-all peer-checked:bg-[#336600]"></div>
                           </label>
                         </div>
                       </div>
@@ -834,7 +834,7 @@ const saveRazorpayKeys = async () => {
                               name="gstinNumber"
                               value={settings.gstinNumber}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="22AAAAA0000A1Z5"
                             />
                             <p className="text-xs text-gray-500 mt-1">
@@ -850,7 +850,7 @@ const saveRazorpayKeys = async () => {
                       <div className="bg-gray-50 rounded-lg p-4">
                         <div className="flex items-center justify-between mb-4">
                           <div className="flex items-center">
-                            <div className="w-10 h-10 bg-gradient-to-r from-[#996600] to-[#7a5200] rounded-lg flex items-center justify-center mr-3">
+                            <div className="w-10 h-10 bg-gradient-to-r from-[#336600] to-[#2a5200] rounded-lg flex items-center justify-center mr-3">
                               <CreditCard size={20} className="text-white" />
                             </div>
                             <div>
@@ -866,7 +866,7 @@ const saveRazorpayKeys = async () => {
                               onChange={(e) => handleRazorpayToggle(e.target.checked)}
                               className="sr-only peer"
                             />
-                            <div className="w-10 h-5 sm:w-11 sm:h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 sm:after:h-5 sm:after:w-5 after:transition-all peer-checked:bg-[#996600]"></div>
+                            <div className="w-10 h-5 sm:w-11 sm:h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 sm:after:h-5 sm:after:w-5 after:transition-all peer-checked:bg-[#336600]"></div>
                           </label>
                         </div>
                         
@@ -892,7 +892,7 @@ const saveRazorpayKeys = async () => {
                                     setRazorpayKeySecretInput(settings.razorpayKeySecret || '');
                                     setShowRazorpayModal(true);
                                   }}
-                                  className="text-[#996600] hover:text-[#7a5200] text-xs ml-2 px-2 py-1"
+                                  className="text-[#336600] hover:text-[#2a5200] text-xs ml-2 px-2 py-1"
                                 >
                                   {settings.razorpayKeyId ? 'Edit' : 'Set'}
                                 </button>
@@ -938,7 +938,7 @@ const saveRazorpayKeys = async () => {
                                   }}
                                   className={`text-xs ml-2 px-2 py-1 ${
                                     settings.razorpayKeySecret 
-                                      ? 'text-[#996600] hover:text-[#7a5200]' 
+                                      ? 'text-[#336600] hover:text-[#2a5200]' 
                                       : 'text-red-600 hover:text-red-800'
                                   }`}
                                 >
@@ -970,7 +970,7 @@ const saveRazorpayKeys = async () => {
                               onChange={handleInputChange}
                               className="sr-only peer"
                             />
-                            <div className="w-10 h-5 sm:w-11 sm:h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 sm:after:h-5 sm:after:w-5 after:transition-all peer-checked:bg-[#996600]"></div>
+                            <div className="w-10 h-5 sm:w-11 sm:h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 sm:after:h-5 sm:after:w-5 after:transition-all peer-checked:bg-[#336600]"></div>
                           </label>
                         </div>
                       </div>
@@ -1014,7 +1014,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.headerScripts}
                             onChange={handleInputChange}
                             rows="6"
-                            className="w-full px-3 py-2 text-sm font-mono border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm font-mono border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder='<!-- Add header scripts here -->'
                           />
                           <div className="text-xs text-gray-500 mt-1">
@@ -1041,7 +1041,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.bodyScripts}
                             onChange={handleInputChange}
                             rows="6"
-                            className="w-full px-3 py-2 text-sm font-mono border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm font-mono border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder='<!-- Add body scripts here -->'
                           />
                           <div className="text-xs text-gray-500 mt-1">
@@ -1068,7 +1068,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.footerScripts}
                             onChange={handleInputChange}
                             rows="6"
-                            className="w-full px-3 py-2 text-sm font-mono border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm font-mono border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder='<!-- Add footer scripts here -->'
                           />
                           <div className="text-xs text-gray-500 mt-1">
@@ -1095,7 +1095,7 @@ const saveRazorpayKeys = async () => {
                             name="contactNumber"
                             value={settings.contactNumber}
                             onChange={handleInputChange}
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="+91 1234567890"
                           />
                         </div>
@@ -1110,7 +1110,7 @@ const saveRazorpayKeys = async () => {
                             name="whatsappNumber"
                             value={settings.whatsappNumber}
                             onChange={handleInputChange}
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="+91 1234567890"
                           />
                           <p className="text-xs text-gray-500 mt-1">
@@ -1128,7 +1128,7 @@ const saveRazorpayKeys = async () => {
                             name="callNumber"
                             value={settings.callNumber}
                             onChange={handleInputChange}
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="+91 1234567890"
                           />
                           <p className="text-xs text-gray-500 mt-1">
@@ -1146,7 +1146,7 @@ const saveRazorpayKeys = async () => {
                             name="contactEmail"
                             value={settings.contactEmail}
                             onChange={handleInputChange}
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="contact@example.com"
                           />
                         </div>
@@ -1161,7 +1161,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.companyAddress}
                             onChange={handleInputChange}
                             rows="2"
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="123 Street, City, Country"
                           />
                         </div>
@@ -1185,7 +1185,7 @@ const saveRazorpayKeys = async () => {
                               name={field}
                               value={settings[field]}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder={`https://${field.replace('Url', '')}.com/yourpage`}
                             />
                           </div>
@@ -1208,7 +1208,7 @@ const saveRazorpayKeys = async () => {
                           value={settings.footerText}
                           onChange={handleInputChange}
                           rows="2"
-                          className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                          className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                           placeholder="© 2024 My Store. All rights reserved."
                         />
                       </div>
@@ -1228,7 +1228,7 @@ const saveRazorpayKeys = async () => {
                                   newLinks[index].name = e.target.value;
                                   setFooterLinks(newLinks);
                                 }}
-                                className="flex-1 px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#996600]"
+                                className="flex-1 px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#336600]"
                                 placeholder="Link Name"
                               />
                               <input
@@ -1239,7 +1239,7 @@ const saveRazorpayKeys = async () => {
                                   newLinks[index].url = e.target.value;
                                   setFooterLinks(newLinks);
                                 }}
-                                className="flex-1 px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#996600]"
+                                className="flex-1 px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#336600]"
                                 placeholder="https://example.com"
                               />
                               <button
@@ -1258,20 +1258,20 @@ const saveRazorpayKeys = async () => {
                             type="text"
                             value={newFooterLink.name}
                             onChange={(e) => setNewFooterLink(prev => ({ ...prev, name: e.target.value }))}
-                            className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="Link Name"
                           />
                           <input
                             type="url"
                             value={newFooterLink.url}
                             onChange={(e) => setNewFooterLink(prev => ({ ...prev, url: e.target.value }))}
-                            className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="https://example.com"
                           />
                           <button
                             type="button"
                             onClick={handleAddFooterLink}
-                            className="px-4 py-2 text-sm bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded-lg hover:from-[#7a5200] hover:to-[#5a3b00]"
+                            className="px-4 py-2 text-sm bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded-lg hover:from-[#2a5200] hover:to-[#1e3d00]"
                           >
                             Add Link
                           </button>
@@ -1301,7 +1301,7 @@ const saveRazorpayKeys = async () => {
                               value={settings.shippingInfo}
                               onChange={handleInputChange}
                               rows="2"
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Learn about our shipping policies, delivery times, and tracking information"
                             />
                           </div>
@@ -1316,7 +1316,7 @@ const saveRazorpayKeys = async () => {
                               value={settings.orderProcessingTime}
                               onChange={handleInputChange}
                               rows="2"
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="All orders are processed within 1-2 business days after payment confirmation. Orders placed on weekends or holidays will be processed on the next business day."
                             />
                           </div>
@@ -1339,7 +1339,7 @@ const saveRazorpayKeys = async () => {
                               name="standardShippingDelivery"
                               value={settings.standardShippingDelivery}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="5-7 business days"
                             />
                           </div>
@@ -1352,7 +1352,7 @@ const saveRazorpayKeys = async () => {
                               name="standardShippingCost"
                               value={settings.standardShippingCost}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="₹4.99"
                             />
                           </div>
@@ -1365,7 +1365,7 @@ const saveRazorpayKeys = async () => {
                               name="standardFreeShippingThreshold"
                               value={settings.standardFreeShippingThreshold}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="₹50"
                             />
                           </div>
@@ -1388,7 +1388,7 @@ const saveRazorpayKeys = async () => {
                               name="internationalShippingDelivery"
                               value={settings.internationalShippingDelivery}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="10-15 business days"
                             />
                           </div>
@@ -1401,7 +1401,7 @@ const saveRazorpayKeys = async () => {
                               value={settings.internationalShippingNote}
                               onChange={handleInputChange}
                               rows="2"
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="International shipping costs vary by destination. You'll see the exact shipping cost at checkout."
                             />
                           </div>
@@ -1431,7 +1431,7 @@ const saveRazorpayKeys = async () => {
                               name="returnsPolicyTitle"
                               value={settings.returnsPolicyTitle}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Returns & Refunds Policy"
                             />
                           </div>
@@ -1445,7 +1445,7 @@ const saveRazorpayKeys = async () => {
                               value={settings.returnsPolicyDescription}
                               onChange={handleInputChange}
                               rows="2"
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="We want you to be completely satisfied with your purchase. Here's everything you need to know about returns and refunds."
                             />
                           </div>
@@ -1472,7 +1472,7 @@ const saveRazorpayKeys = async () => {
                                     newSteps[index].title = e.target.value;
                                     setSettings(prev => ({ ...prev, returnProcessSteps: newSteps }));
                                   }}
-                                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#996600]"
+                                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#336600]"
                                   placeholder="Step Title"
                                 />
                                 <textarea
@@ -1483,7 +1483,7 @@ const saveRazorpayKeys = async () => {
                                     setSettings(prev => ({ ...prev, returnProcessSteps: newSteps }));
                                   }}
                                   rows="2"
-                                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#996600]"
+                                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#336600]"
                                   placeholder="Step Description"
                                 />
                               </div>
@@ -1503,20 +1503,20 @@ const saveRazorpayKeys = async () => {
                             type="text"
                             value={newReturnStep.title}
                             onChange={(e) => setNewReturnStep(prev => ({ ...prev, title: e.target.value }))}
-                            className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="Step Title"
                           />
                           <input
                             type="text"
                             value={newReturnStep.description}
                             onChange={(e) => setNewReturnStep(prev => ({ ...prev, description: e.target.value }))}
-                            className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="Step Description"
                           />
                           <button
                             type="button"
                             onClick={handleAddReturnStep}
-                            className="px-4 py-2 text-sm bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded-lg hover:from-[#7a5200] hover:to-[#5a3b00]"
+                            className="px-4 py-2 text-sm bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded-lg hover:from-[#2a5200] hover:to-[#1e3d00]"
                           >
                             <Plus size={16} />
                           </button>
@@ -1539,7 +1539,7 @@ const saveRazorpayKeys = async () => {
                               name="returnTimeframe"
                               value={settings.returnTimeframe}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="30 days from the delivery date"
                             />
                           </div>
@@ -1567,13 +1567,13 @@ const saveRazorpayKeys = async () => {
                                 type="text"
                                 value={newReturnCondition}
                                 onChange={(e) => setNewReturnCondition(e.target.value)}
-                                className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                                className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                                 placeholder="Add condition (e.g., Items must be unworn, unused, and unwashed)"
                               />
                               <button
                                 type="button"
                                 onClick={handleAddReturnCondition}
-                                className="px-4 py-2 text-sm bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded-lg hover:from-[#7a5200] hover:to-[#5a3b00]"
+                                className="px-4 py-2 text-sm bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded-lg hover:from-[#2a5200] hover:to-[#1e3d00]"
                               >
                                 Add
                               </button>
@@ -1589,7 +1589,7 @@ const saveRazorpayKeys = async () => {
                               value={settings.customerShippingResponsibility}
                               onChange={handleInputChange}
                               rows="2"
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Return shipping costs are the responsibility of the customer, unless the return is due to our error..."
                             />
                           </div>
@@ -1622,13 +1622,13 @@ const saveRazorpayKeys = async () => {
                               type="text"
                               value={newNonReturnableItem}
                               onChange={(e) => setNewNonReturnableItem(e.target.value)}
-                              className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Add non-returnable item (e.g., Personalized or customized items)"
                             />
                             <button
                               type="button"
                               onClick={handleAddNonReturnableItem}
-                              className="px-4 py-2 text-sm bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded-lg hover:from-[#7a5200] hover:to-[#5a3b00]"
+                              className="px-4 py-2 text-sm bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded-lg hover:from-[#2a5200] hover:to-[#1e3d00]"
                             >
                               Add
                             </button>
@@ -1651,7 +1651,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.defectiveItemsNote}
                             onChange={handleInputChange}
                             rows="2"
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="If you receive a defective or damaged item, please contact us immediately..."
                           />
                         </div>
@@ -1672,7 +1672,7 @@ const saveRazorpayKeys = async () => {
                               name="refundProcessingTime"
                               value={settings.refundProcessingTime}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="5-10 business days"
                             />
                           </div>
@@ -1686,7 +1686,7 @@ const saveRazorpayKeys = async () => {
                               value={settings.refundNote}
                               onChange={handleInputChange}
                               rows="2"
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="It may take additional time for the refund to appear on your credit card statement..."
                             />
                           </div>
@@ -1700,7 +1700,7 @@ const saveRazorpayKeys = async () => {
                               name="refundAmountFormula"
                               value={settings.refundAmountFormula}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Refund Amount = Item Price - Shipping Costs"
                             />
                           </div>
@@ -1714,7 +1714,7 @@ const saveRazorpayKeys = async () => {
                               value={settings.refundAmountDescription}
                               onChange={handleInputChange}
                               rows="2"
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="You will receive a full refund for the item price, minus any shipping costs..."
                             />
                           </div>
@@ -1736,7 +1736,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.exchangePolicy}
                             onChange={handleInputChange}
                             rows="2"
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="We currently do not offer direct exchanges. To exchange an item..."
                           />
                         </div>
@@ -1765,7 +1765,7 @@ const saveRazorpayKeys = async () => {
                               name="privacyPolicyTitle"
                               value={settings.privacyPolicyTitle}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Privacy Policy"
                             />
                           </div>
@@ -1780,7 +1780,7 @@ const saveRazorpayKeys = async () => {
                                 name="privacyPolicyLastUpdated"
                                 value={settings.privacyPolicyLastUpdated}
                                 onChange={handleInputChange}
-                                className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                                className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                                 placeholder="2026"
                               />
                             </div>
@@ -1797,7 +1797,7 @@ const saveRazorpayKeys = async () => {
                                     onChange={handleInputChange}
                                     className="sr-only peer"
                                   />
-                                  <div className="w-10 h-5 sm:w-11 sm:h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 sm:after:h-5 sm:after:w-5 after:transition-all peer-checked:bg-[#996600]"></div>
+                                  <div className="w-10 h-5 sm:w-11 sm:h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 sm:after:h-5 sm:after:w-5 after:transition-all peer-checked:bg-[#336600]"></div>
                                 </label>
                                 <span className="ml-3 text-sm text-gray-600">
                                   {settings.privacyPolicyEffectiveImmediately ? 'Effective immediately' : 'Not effective immediately'}
@@ -1815,7 +1815,7 @@ const saveRazorpayKeys = async () => {
                               value={settings.privacyPolicyIntroduction}
                               onChange={handleInputChange}
                               rows="2"
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="We value your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and safeguard your data."
                             />
                           </div>
@@ -1848,13 +1848,13 @@ const saveRazorpayKeys = async () => {
                               type="text"
                               value={newDataWeCollect}
                               onChange={(e) => setNewDataWeCollect(e.target.value)}
-                              className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Add data type (e.g., Name and contact details)"
                             />
                             <button
                               type="button"
                               onClick={handleAddDataWeCollect}
-                              className="px-4 py-2 text-sm bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded-lg hover:from-[#7a5200] hover:to-[#5a3b00]"
+                              className="px-4 py-2 text-sm bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded-lg hover:from-[#2a5200] hover:to-[#1e3d00]"
                             >
                               Add
                             </button>
@@ -1888,13 +1888,13 @@ const saveRazorpayKeys = async () => {
                               type="text"
                               value={newHowWeUseInfo}
                               onChange={(e) => setNewHowWeUseInfo(e.target.value)}
-                              className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Add usage purpose (e.g., Order processing and fulfillment)"
                             />
                             <button
                               type="button"
                               onClick={handleAddHowWeUseInfo}
-                              className="px-4 py-2 text-sm bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded-lg hover:from-[#7a5200] hover:to-[#5a3b00]"
+                              className="px-4 py-2 text-sm bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded-lg hover:from-[#2a5200] hover:to-[#1e3d00]"
                             >
                               Add
                             </button>
@@ -1917,7 +1917,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.privacyIntroductionSection}
                             onChange={handleInputChange}
                             rows="3"
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="Welcome to our website. We are committed to protecting your personal information and your right to privacy..."
                           />
                         </div>
@@ -1938,7 +1938,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.informationWeCollectSection}
                             onChange={handleInputChange}
                             rows="3"
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="We collect personal information that you voluntarily provide to you when you register on our website..."
                           />
                         </div>
@@ -1959,7 +1959,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.howWeUseInformationSection}
                             onChange={handleInputChange}
                             rows="3"
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="We use the information we collect for various purposes, including to process and fulfill your orders..."
                           />
                         </div>
@@ -1980,7 +1980,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.dataSecuritySection}
                             onChange={handleInputChange}
                             rows="3"
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="We have implemented appropriate technical and organizational security measures..."
                           />
                         </div>
@@ -2002,7 +2002,7 @@ const saveRazorpayKeys = async () => {
                               value={settings.dataProtectionRightsSection}
                               onChange={handleInputChange}
                               rows="2"
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Depending on your location, you may have rights regarding your personal data including..."
                             />
                           </div>
@@ -2030,13 +2030,13 @@ const saveRazorpayKeys = async () => {
                                 type="text"
                                 value={newDataProtectionRight}
                                 onChange={(e) => setNewDataProtectionRight(e.target.value)}
-                                className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                                className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                                 placeholder="Add right (e.g., Right to access)"
                               />
                               <button
                                 type="button"
                                 onClick={handleAddDataProtectionRight}
-                                className="px-4 py-2 text-sm bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded-lg hover:from-[#7a5200] hover:to-[#5a3b00]"
+                                className="px-4 py-2 text-sm bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded-lg hover:from-[#2a5200] hover:to-[#1e3d00]"
                               >
                                 Add
                               </button>
@@ -2060,7 +2060,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.contactUsSection}
                             onChange={handleInputChange}
                             rows="2"
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="If you have questions or comments about this policy, you may contact us..."
                           />
                         </div>
@@ -2081,7 +2081,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.securityMeasuresSection}
                             onChange={handleInputChange}
                             rows="3"
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="We implement industry-standard security measures to protect your personal information..."
                           />
                         </div>
@@ -2110,7 +2110,7 @@ const saveRazorpayKeys = async () => {
                               name="termsOfServiceTitle"
                               value={settings.termsOfServiceTitle}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Terms of Service"
                             />
                           </div>
@@ -2124,7 +2124,7 @@ const saveRazorpayKeys = async () => {
                               name="termsOfServiceLastUpdated"
                               value={settings.termsOfServiceLastUpdated}
                               onChange={handleInputChange}
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="2026"
                             />
                           </div>
@@ -2138,7 +2138,7 @@ const saveRazorpayKeys = async () => {
                               value={settings.termsImportantNotice}
                               onChange={handleInputChange}
                               rows="2"
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="These Terms of Service govern your use of our website and services. By using our website, you acknowledge that you have read, understood, and agree to be bound by these terms."
                             />
                           </div>
@@ -2171,13 +2171,13 @@ const saveRazorpayKeys = async () => {
                               type="text"
                               value={newTermsUserRequirement}
                               onChange={(e) => setNewTermsUserRequirement(e.target.value)}
-                              className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                              className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                               placeholder="Add user requirement (e.g., You must be at least 18 years old to place an order)"
                             />
                             <button
                               type="button"
                               onClick={handleAddTermsUserRequirement}
-                              className="px-4 py-2 text-sm bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded-lg hover:from-[#7a5200] hover:to-[#5a3b00]"
+                              className="px-4 py-2 text-sm bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded-lg hover:from-[#2a5200] hover:to-[#1e3d00]"
                             >
                               Add
                             </button>
@@ -2203,7 +2203,7 @@ const saveRazorpayKeys = async () => {
                                     type="text"
                                     value={section.title}
                                     onChange={(e) => handleUpdateTermsSection(index, 'title', e.target.value)}
-                                    className="flex-1 px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#996600]"
+                                    className="flex-1 px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#336600]"
                                     placeholder="Section Title"
                                   />
                                 </div>
@@ -2211,7 +2211,7 @@ const saveRazorpayKeys = async () => {
                                   value={section.content}
                                   onChange={(e) => handleUpdateTermsSection(index, 'content', e.target.value)}
                                   rows="3"
-                                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#996600]"
+                                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#336600]"
                                   placeholder="Section Content"
                                 />
                               </div>
@@ -2231,20 +2231,20 @@ const saveRazorpayKeys = async () => {
                             type="text"
                             value={newTermsSection.title}
                             onChange={(e) => setNewTermsSection(prev => ({ ...prev, title: e.target.value }))}
-                            className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="Section Title"
                           />
                           <input
                             type="text"
                             value={newTermsSection.content}
                             onChange={(e) => setNewTermsSection(prev => ({ ...prev, content: e.target.value }))}
-                            className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="Section Content"
                           />
                           <button
                             type="button"
                             onClick={handleAddTermsSection}
-                            className="px-4 py-2 text-sm bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded-lg hover:from-[#7a5200] hover:to-[#5a3b00]"
+                            className="px-4 py-2 text-sm bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded-lg hover:from-[#2a5200] hover:to-[#1e3d00]"
                           >
                             <Plus size={16} />
                           </button>
@@ -2266,7 +2266,7 @@ const saveRazorpayKeys = async () => {
                             value={settings.termsContactInfo}
                             onChange={handleInputChange}
                             rows="2"
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#996600] focus:border-[#996600]"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#336600] focus:border-[#336600]"
                             placeholder="Questions about the Terms of Service should be sent to us at the contact information provided in our website footer."
                           />
                         </div>
@@ -2280,7 +2280,7 @@ const saveRazorpayKeys = async () => {
                   <button
                     type="submit"
                     disabled={saving}
-                    className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-[#996600] to-[#7a5200] text-white font-medium rounded-lg hover:from-[#7a5200] hover:to-[#5a3b00] transition-all duration-200 shadow-sm hover:shadow flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
+                    className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-[#336600] to-[#2a5200] text-white font-medium rounded-lg hover:from-[#2a5200] hover:to-[#1e3d00] transition-all duration-200 shadow-sm hover:shadow flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
                   >
                     {saving ? (
                       <>

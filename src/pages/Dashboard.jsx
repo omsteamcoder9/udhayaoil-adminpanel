@@ -74,7 +74,7 @@ const Dashboard = () => {
         <Sidebar />
         <div className="flex-1 flex items-center justify-center p-4">
           <div className="text-center">
-            <div className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-b-2 border-[#262673] mx-auto"></div>
+            <div className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-b-2 border-[#336600] mx-auto"></div>
             <p className="mt-4 text-slate-600 text-sm sm:text-base">Loading dashboard data...</p>
           </div>
         </div>
@@ -125,10 +125,10 @@ const Dashboard = () => {
           {/* Stats Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
             {/* Total Users Card */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl shadow-lg sm:shadow-2xl border border-slate-200/50 transform hover:scale-105 transition-all duration-300 hover:border-[#262673]/50">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl shadow-lg sm:shadow-2xl border border-slate-200/50 transform hover:scale-105 transition-all duration-300 hover:border-[#336600]/50">
               <div className="px-3 py-4 sm:p-4 lg:p-5">
                 <div className="flex items-center">
-                  <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-[#262673]/10 mr-3 sm:mr-4 border border-[#262673]/20">
+                  <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-[#336600]/10 mr-3 sm:mr-4 border border-[#336600]/20">
                     <span className="text-lg sm:text-xl lg:text-2xl">👥</span>
                   </div>
                   <div>
@@ -145,10 +145,10 @@ const Dashboard = () => {
             </div>
 
             {/* Total Orders Card */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl shadow-lg sm:shadow-2xl border border-slate-200/50 transform hover:scale-105 transition-all duration-300 hover:border-[#262673]/50">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl shadow-lg sm:shadow-2xl border border-slate-200/50 transform hover:scale-105 transition-all duration-300 hover:border-[#336600]/50">
               <div className="px-3 py-4 sm:p-4 lg:p-5">
                 <div className="flex items-center">
-                  <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-[#262673]/10 mr-3 sm:mr-4 border border-[#262673]/20">
+                  <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-[#336600]/10 mr-3 sm:mr-4 border border-[#336600]/20">
                     <span className="text-lg sm:text-xl lg:text-2xl">📦</span>
                   </div>
                   <div>
@@ -165,10 +165,10 @@ const Dashboard = () => {
             </div>
 
             {/* Pending Orders Card */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl shadow-lg sm:shadow-2xl border border-slate-200/50 transform hover:scale-105 transition-all duration-300 hover:border-[#262673]/50">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl shadow-lg sm:shadow-2xl border border-slate-200/50 transform hover:scale-105 transition-all duration-300 hover:border-[#336600]/50">
               <div className="px-3 py-4 sm:p-4 lg:p-5">
                 <div className="flex items-center">
-                  <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-[#262673]/10 mr-3 sm:mr-4 border border-[#262673]/20">
+                  <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-[#336600]/10 mr-3 sm:mr-4 border border-[#336600]/20">
                     <span className="text-lg sm:text-xl lg:text-2xl">⏳</span>
                   </div>
                   <div>
@@ -185,10 +185,10 @@ const Dashboard = () => {
             </div>
 
             {/* Low Stock Items Card */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl shadow-lg sm:shadow-2xl border border-slate-200/50 transform hover:scale-105 transition-all duration-300 hover:border-[#262673]/50">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl shadow-lg sm:shadow-2xl border border-slate-200/50 transform hover:scale-105 transition-all duration-300 hover:border-[#336600]/50">
               <div className="px-3 py-4 sm:p-4 lg:p-5">
                 <div className="flex items-center">
-                  <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-[#262673]/10 mr-3 sm:mr-4 border border-[#262673]/20">
+                  <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-[#336600]/10 mr-3 sm:mr-4 border border-[#336600]/20">
                     <span className="text-lg sm:text-xl lg:text-2xl">⚠️</span>
                   </div>
                   <div>

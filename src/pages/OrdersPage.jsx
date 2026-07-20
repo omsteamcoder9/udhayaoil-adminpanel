@@ -762,7 +762,7 @@ const OrdersPage = () => {
     return (
       <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-2 sm:p-4 z-50">
         <div className="bg-white rounded-lg w-full max-w-md max-h-[85vh] flex flex-col shadow-2xl">
-          <div className="bg-gradient-to-r from-[#996600] to-[#7a5200] text-white p-3 sm:p-4 flex justify-between items-center">
+          <div className="bg-gradient-to-r from-[#336600] to-[#2a5200] text-white p-3 sm:p-4 flex justify-between items-center">
             <div className="flex items-center gap-2">
               <div className="w-7 h-7 bg-white/20 rounded-full flex items-center justify-center text-sm">🛒</div>
               <div>
@@ -849,7 +849,7 @@ const OrdersPage = () => {
               </div>
             </div>
 
-            <div className="bg-[#996600]/10 p-3 sm:p-4 rounded border border-[#996600]/20">
+            <div className="bg-[#336600]/10 p-3 sm:p-4 rounded border border-[#336600]/20">
               <div className="space-y-1.5">
                 <div className="flex justify-between text-sm sm:text-base">
                   <span className="text-gray-700">Subtotal:</span>
@@ -863,9 +863,9 @@ const OrdersPage = () => {
                   <span className="text-gray-700">Tax:</span>
                   <span className="font-semibold">{formatCurrency(tax)}</span>
                 </div>
-                <div className="flex justify-between pt-2 border-t border-[#996600]/30 font-bold text-base sm:text-lg">
+                <div className="flex justify-between pt-2 border-t border-[#336600]/30 font-bold text-base sm:text-lg">
                   <span>TOTAL:</span>
-                  <span className="text-[#996600]">{formatCurrency(total)}</span>
+                  <span className="text-[#336600]">{formatCurrency(total)}</span>
                 </div>
               </div>
             </div>
@@ -955,7 +955,7 @@ const OrdersPage = () => {
         <Sidebar />
         <div className="flex-1 p-4 sm:p-6 bg-gray-50">
           <div className="flex justify-center items-center h-64">
-            <div className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-b-2 border-[#996600]"></div>
+            <div className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-b-2 border-[#336600]"></div>
           </div>
         </div>
       </div>
@@ -978,7 +978,7 @@ const OrdersPage = () => {
             }`}>{error}</p>
             <button 
               onClick={() => fetchOrders(true)}
-              className="mt-2 px-4 py-2 bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded hover:from-[#7a5200] hover:to-[#5a3b00]"
+              className="mt-2 px-4 py-2 bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded hover:from-[#2a5200] hover:to-[#1e3d00]"
             >
               Retry
             </button>
@@ -1026,7 +1026,7 @@ const OrdersPage = () => {
             {/* Top row with title and buttons */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-3 sm:space-y-0">
               <h2 className="text-lg sm:text-xl font-semibold text-gray-700 flex items-center">
-                <FaTag className="mr-2 text-[#996600]" />
+                <FaTag className="mr-2 text-[#336600]" />
                 All Orders ({filteredOrders.length})
               </h2>
               <div className="flex space-x-2 sm:space-x-3 w-full sm:w-auto">
@@ -1055,7 +1055,7 @@ const OrdersPage = () => {
                       placeholder="Search by order ID, customer name, email, or phone..."
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#996600] focus:border-transparent text-sm"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#336600] focus:border-transparent text-sm"
                     />
                   </div>
 
@@ -1063,7 +1063,7 @@ const OrdersPage = () => {
                   <div className="relative flex-1">
                     <button
                       onClick={() => setStatusDropdownOpen(!statusDropdownOpen)}
-                      className="w-full flex items-center justify-between px-4 py-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 text-sm focus:ring-2 focus:ring-[#996600] focus:border-transparent transition-all duration-200"
+                      className="w-full flex items-center justify-between px-4 py-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 text-sm focus:ring-2 focus:ring-[#336600] focus:border-transparent transition-all duration-200"
                     >
                       <span className="truncate">
                         <Filter className="inline mr-2 text-gray-400" size={14} />
@@ -1083,7 +1083,7 @@ const OrdersPage = () => {
                               setSelectedStatus(option.value);
                               setStatusDropdownOpen(false);
                             }}
-                            className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 ${selectedStatus === option.value ? 'bg-[#996600]/10 text-[#996600]' : ''}`}
+                            className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 ${selectedStatus === option.value ? 'bg-[#336600]/10 text-[#336600]' : ''}`}
                           >
                             {option.icon} {option.label}
                           </button>
@@ -1096,7 +1096,7 @@ const OrdersPage = () => {
                   <div className="relative flex-1">
                     <button
                       onClick={() => setSortDropdownOpen(!sortDropdownOpen)}
-                      className="w-full flex items-center justify-between px-4 py-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 text-sm focus:ring-2 focus:ring-[#996600] focus:border-transparent transition-all duration-200"
+                      className="w-full flex items-center justify-between px-4 py-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 text-sm focus:ring-2 focus:ring-[#336600] focus:border-transparent transition-all duration-200"
                     >
                       <div className="flex items-center">
                         <FaSortAmountDown className="mr-2 text-gray-400" />
@@ -1114,7 +1114,7 @@ const OrdersPage = () => {
                             setSortOption('newest');
                             setSortDropdownOpen(false);
                           }}
-                          className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 flex items-center ${sortOption === 'newest' ? 'bg-[#996600]/10 text-[#996600]' : ''}`}
+                          className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 flex items-center ${sortOption === 'newest' ? 'bg-[#336600]/10 text-[#336600]' : ''}`}
                         >
                           <FaSortAmountDown className="mr-2" /> Newest First
                         </button>
@@ -1123,7 +1123,7 @@ const OrdersPage = () => {
                             setSortOption('oldest');
                             setSortDropdownOpen(false);
                           }}
-                          className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 flex items-center ${sortOption === 'oldest' ? 'bg-[#996600]/10 text-[#996600]' : ''}`}
+                          className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 flex items-center ${sortOption === 'oldest' ? 'bg-[#336600]/10 text-[#336600]' : ''}`}
                         >
                           <FaSortAmountUp className="mr-2" /> Oldest First
                         </button>
@@ -1133,7 +1133,7 @@ const OrdersPage = () => {
                             setSortOption('amount-high');
                             setSortDropdownOpen(false);
                           }}
-                          className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 ${sortOption === 'amount-high' ? 'bg-[#996600]/10 text-[#996600]' : ''}`}
+                          className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 ${sortOption === 'amount-high' ? 'bg-[#336600]/10 text-[#336600]' : ''}`}
                         >
                           Amount (High to Low)
                         </button>
@@ -1142,7 +1142,7 @@ const OrdersPage = () => {
                             setSortOption('amount-low');
                             setSortDropdownOpen(false);
                           }}
-                          className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 ${sortOption === 'amount-low' ? 'bg-[#996600]/10 text-[#996600]' : ''}`}
+                          className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 ${sortOption === 'amount-low' ? 'bg-[#336600]/10 text-[#336600]' : ''}`}
                         >
                           Amount (Low to High)
                         </button>
@@ -1172,8 +1172,8 @@ const OrdersPage = () => {
                   <p className="text-gray-500 text-xs sm:text-sm font-medium">Total Orders</p>
                   <p className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mt-1 sm:mt-2">{totalOrders}</p>
                 </div>
-                <div className="p-1 sm:p-2 bg-[#996600]/10 rounded-lg">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-[#996600] to-[#7a5200] rounded-full flex items-center justify-center">
+                <div className="p-1 sm:p-2 bg-[#336600]/10 rounded-lg">
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-[#336600] to-[#2a5200] rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-xs sm:text-sm">T</span>
                   </div>
                 </div>
@@ -1231,7 +1231,7 @@ const OrdersPage = () => {
                 <p className="text-gray-400 mt-2">Orders data is not in expected format</p>
                 <button 
                   onClick={() => fetchOrders(true)}
-                  className="mt-4 px-4 py-2 bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded hover:from-[#7a5200] hover:to-[#5a3b00]"
+                  className="mt-4 px-4 py-2 bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded hover:from-[#2a5200] hover:to-[#1e3d00]"
                 >
                   Retry
                 </button>
@@ -1252,7 +1252,7 @@ const OrdersPage = () => {
                 {(selectedStatus !== 'all' || searchTerm) && (
                   <button
                     onClick={clearFilters}
-                    className="mt-4 px-4 py-2 bg-gradient-to-r from-[#996600] to-[#7a5200] text-white rounded-lg hover:from-[#7a5200] hover:to-[#5a3b00] text-sm"
+                    className="mt-4 px-4 py-2 bg-gradient-to-r from-[#336600] to-[#2a5200] text-white rounded-lg hover:from-[#2a5200] hover:to-[#1e3d00] text-sm"
                   >
                     Clear Filters
                   </button>
@@ -1342,7 +1342,7 @@ const OrdersPage = () => {
                                     className={`w-full text-sm border rounded-lg px-3 py-2 ${
                                       statusUpdating[order._id] 
                                         ? 'bg-gray-100 cursor-not-allowed' 
-                                        : 'bg-white cursor-pointer focus:ring-2 focus:ring-[#996600] focus:border-transparent'
+                                        : 'bg-white cursor-pointer focus:ring-2 focus:ring-[#336600] focus:border-transparent'
                                     }`}
                                   >
                                     {statusOptions.map(option => (
@@ -1362,7 +1362,7 @@ const OrdersPage = () => {
                                     className={`w-full text-sm border rounded-lg px-3 py-2 ${
                                       statusUpdating[order._id] 
                                         ? 'bg-gray-100 cursor-not-allowed' 
-                                        : 'bg-white cursor-pointer focus:ring-2 focus:ring-[#996600] focus:border-transparent'
+                                        : 'bg-white cursor-pointer focus:ring-2 focus:ring-[#336600] focus:border-transparent'
                                     }`}
                                   >
                                     {paymentStatusOptions.map(option => (
@@ -1372,7 +1372,7 @@ const OrdersPage = () => {
                                     ))}
                                   </select>
                                   {statusUpdating[order._id] && (
-                                    <div className="text-xs text-[#996600] mt-1">
+                                    <div className="text-xs text-[#336600] mt-1">
                                       Updating...
                                     </div>
                                   )}
@@ -1384,7 +1384,7 @@ const OrdersPage = () => {
                             <div className="flex space-x-2 pt-2 border-t border-gray-100">
                               <button
                                 onClick={() => fetchOrderReceipt(orderId)}
-                                className="flex-1 bg-gradient-to-r from-[#996600] to-[#7a5200] hover:from-[#7a5200] hover:to-[#5a3b00] text-white px-3 py-2 rounded-lg text-sm font-medium transition duration-200"
+                                className="flex-1 bg-gradient-to-r from-[#336600] to-[#2a5200] hover:from-[#2a5200] hover:to-[#1e3d00] text-white px-3 py-2 rounded-lg text-sm font-medium transition duration-200"
                               >
                                 View Receipt
                               </button>
@@ -1522,7 +1522,7 @@ const OrdersPage = () => {
                                       className={`text-xs border rounded px-2 py-1 w-full max-w-[140px] ${
                                         statusUpdating[order._id] 
                                           ? 'bg-gray-100 cursor-not-allowed' 
-                                          : 'bg-white cursor-pointer focus:ring-2 focus:ring-[#996600] focus:border-transparent'
+                                          : 'bg-white cursor-pointer focus:ring-2 focus:ring-[#336600] focus:border-transparent'
                                       }`}
                                     >
                                       {statusOptions.map(option => (
@@ -1551,7 +1551,7 @@ const OrdersPage = () => {
                                       className={`text-xs border rounded px-2 py-1 w-full max-w-[160px] ${
                                         statusUpdating[order._id] 
                                           ? 'bg-gray-100 cursor-not-allowed' 
-                                          : 'bg-white cursor-pointer focus:ring-2 focus:ring-[#996600] focus:border-transparent'
+                                          : 'bg-white cursor-pointer focus:ring-2 focus:ring-[#336600] focus:border-transparent'
                                       }`}
                                     >
                                       {paymentStatusOptions.map(option => (
@@ -1566,7 +1566,7 @@ const OrdersPage = () => {
                                     </select>
                                     
                                     {statusUpdating[order._id] && (
-                                      <div className="flex items-center gap-1 text-xs text-[#996600]">
+                                      <div className="flex items-center gap-1 text-xs text-[#336600]">
                                         <svg className="animate-spin h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                           <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
@@ -1595,7 +1595,7 @@ const OrdersPage = () => {
                                 <div className="flex flex-col sm:flex-row gap-1 sm:gap-2">
                                   <button
                                     onClick={() => fetchOrderReceipt(orderId)}
-                                    className="px-2 py-1 sm:px-3 sm:py-1 bg-gradient-to-r from-[#996600] to-[#7a5200] text-white text-xs sm:text-sm rounded hover:from-[#7a5200] hover:to-[#5a3b00] transition-colors whitespace-nowrap"
+                                    className="px-2 py-1 sm:px-3 sm:py-1 bg-gradient-to-r from-[#336600] to-[#2a5200] text-white text-xs sm:text-sm rounded hover:from-[#2a5200] hover:to-[#1e3d00] transition-colors whitespace-nowrap"
                                   >
                                     View Receipt
                                   </button>

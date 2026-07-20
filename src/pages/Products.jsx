@@ -675,7 +675,7 @@ const Products = () => {
           <div className="flex space-x-2 pt-3 border-t border-gray-100">
             <button
               onClick={() => openEditModal(product)}
-              className="flex-1 bg-gradient-to-r from-[#993366] to-[#7a2952] hover:from-[#7a2952] hover:to-[#5c1f3d] text-white px-3 py-2 rounded text-sm font-medium transition duration-200"
+              className="flex-1 bg-gradient-to-r from-[#336600] to-[#2a5200] hover:from-[#2a5200] hover:to-[#1e3d00] text-white px-3 py-2 rounded text-sm font-medium transition duration-200"
             >
               Edit
             </button>
@@ -740,7 +740,7 @@ const Products = () => {
                   {isAdmin && (
                     <button
                       onClick={() => setIsModalOpen(true)}
-                      className="flex-1 sm:flex-none bg-gradient-to-r from-[#993366] to-[#7a2952] hover:from-[#7a2952] hover:to-[#5c1f3d] text-white px-4 py-3 sm:py-2 rounded-lg flex items-center justify-center transition duration-200 text-sm min-h-[42px]"
+                      className="flex-1 sm:flex-none bg-gradient-to-r from-[#336600] to-[#2a5200] hover:from-[#2a5200] hover:to-[#1e3d00] text-white px-4 py-3 sm:py-2 rounded-lg flex items-center justify-center transition duration-200 text-sm min-h-[42px]"
                     >
                       <span className="hidden sm:inline mr-2">+</span>
                       <span>Add Product</span>
@@ -760,7 +760,7 @@ const Products = () => {
                       placeholder="Search products..."
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
-                      className="w-full pl-9 pr-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#993366] focus:border-transparent text-sm"
+                      className="w-full pl-9 pr-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#336600] focus:border-transparent text-sm"
                     />
                   </div>
 
@@ -862,7 +862,7 @@ const Products = () => {
             <div className="bg-white shadow rounded-lg overflow-hidden">
               {loading ? (
                 <div className="text-center py-8">
-                  <div className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-b-2 border-[#993366] mx-auto"></div>
+                  <div className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-b-2 border-[#336600] mx-auto"></div>
                   <p className="mt-2 text-gray-600 text-sm sm:text-base">Loading products...</p>
                 </div>
               ) : (
@@ -943,7 +943,7 @@ const Products = () => {
                                   {isAdmin && (
                                     <td className="px-3 py-4 whitespace-nowrap text-sm font-medium">
                                       <div className="flex space-x-2">
-                                        <button onClick={() => openEditModal(product)} className="bg-gradient-to-r from-[#993366] to-[#7a2952] text-white px-3 py-2 rounded text-xs font-medium">Edit</button>
+                                        <button onClick={() => openEditModal(product)} className="bg-gradient-to-r from-[#336600] to-[#2a5200] text-white px-3 py-2 rounded text-xs font-medium">Edit</button>
                                         <button onClick={() => handleDeleteProduct(product._id)} className="bg-gradient-to-r from-red-500 to-red-600 text-white px-3 py-2 rounded text-xs font-medium">Delete</button>
                                       </div>
                                     </td>

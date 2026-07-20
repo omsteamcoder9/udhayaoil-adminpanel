@@ -212,7 +212,7 @@ const CustomerPage = () => {
       );
     }
     return (
-      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#996600]/10 text-[#996600] border border-[#996600]/20">
+      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#336600]/10 text-[#336600] border border-[#336600]/20">
         <Users className="w-3 h-3 mr-1" />
         Registered
       </span>
@@ -252,7 +252,7 @@ const CustomerPage = () => {
     <div className="bg-white rounded-lg shadow border border-gray-200 p-4 mb-4">
       <div className="flex justify-between items-start mb-3">
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-gradient-to-r from-[#996600] to-[#7a5200] rounded-full flex items-center justify-center text-white font-semibold">
+          <div className="w-10 h-10 bg-gradient-to-r from-[#336600] to-[#2a5200] rounded-full flex items-center justify-center text-white font-semibold">
             {customer.name?.charAt(0).toUpperCase() || 'U'}
           </div>
           <div>
@@ -296,7 +296,7 @@ const CustomerPage = () => {
             e.stopPropagation();
             openGuestToggleModal(customer);
           }}
-          className="flex-1 bg-gradient-to-r from-[#996600] to-[#7a5200] hover:from-[#7a5200] hover:to-[#664200] text-white px-3 py-2 rounded text-sm font-medium transition duration-200 flex items-center justify-center gap-2"
+          className="flex-1 bg-gradient-to-r from-[#336600] to-[#2a5200] hover:from-[#2a5200] hover:to-[#1e3d00] text-white px-3 py-2 rounded text-sm font-medium transition duration-200 flex items-center justify-center gap-2"
         >
           {customer.isGuest ? (
             <>
@@ -333,7 +333,7 @@ const CustomerPage = () => {
       <div className="flex min-h-screen bg-gray-50">
         <Sidebar />
         <div className="flex-1 flex items-center justify-center h-64">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#996600]"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#336600]"></div>
         </div>
       </div>
     );
@@ -394,7 +394,7 @@ const CustomerPage = () => {
                     placeholder="Search customers by name, email, or phone..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-9 pr-4 py-2 md:py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#996600] focus:border-transparent text-sm md:text-base"
+                    className="w-full pl-9 pr-4 py-2 md:py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#336600] focus:border-transparent text-sm md:text-base"
                   />
                 </div>
               </div>
@@ -404,7 +404,7 @@ const CustomerPage = () => {
                 <select
                   value={selectedType}
                   onChange={(e) => setSelectedType(e.target.value)}
-                  className="border border-slate-300 rounded-lg px-2 py-2 md:px-3 md:py-2.5 focus:outline-none focus:ring-2 focus:ring-[#996600] text-sm md:text-base w-full md:w-auto"
+                  className="border border-slate-300 rounded-lg px-2 py-2 md:px-3 md:py-2.5 focus:outline-none focus:ring-2 focus:ring-[#336600] text-sm md:text-base w-full md:w-auto"
                 >
                   <option value="all">All Users</option>
                   <option value="registered">Registered</option>
@@ -430,7 +430,7 @@ const CustomerPage = () => {
                 {customers.length === 0 && (
                   <button
                     onClick={handleRefresh}
-                    className="mt-4 inline-flex items-center px-4 py-2 bg-[#996600] text-white rounded-lg hover:bg-[#7a5200] transition-colors text-sm"
+                    className="mt-4 inline-flex items-center px-4 py-2 bg-[#336600] text-white rounded-lg hover:bg-[#2a5200] transition-colors text-sm"
                   >
                     <RefreshCw size={16} className="mr-2" />
                     Refresh
@@ -474,7 +474,7 @@ const CustomerPage = () => {
                           >
                             <td className="py-4 px-4 md:px-6">
                               <div className="flex items-center gap-3">
-                                <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-r from-[#996600] to-[#7a5200] rounded-full flex items-center justify-center text-white font-semibold text-sm md:text-base">
+                                <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-r from-[#336600] to-[#2a5200] rounded-full flex items-center justify-center text-white font-semibold text-sm md:text-base">
                                   {customer.name?.charAt(0).toUpperCase() || 'U'}
                                 </div>
                                 <div>

@@ -210,7 +210,7 @@ const Categories = () => {
               {isAdmin && (
                 <button
                   onClick={() => setIsModalOpen(true)}
-                  className="flex-1 sm:flex-none bg-gradient-to-r from-[#996600] to-[#7a5200] hover:from-[#7a5200] hover:to-[#664200] text-white px-4 py-2 rounded-lg flex items-center justify-center transition duration-200 text-sm min-h-[42px]"
+                  className="flex-1 sm:flex-none bg-gradient-to-r from-[#336600] to-[#2a5200] hover:from-[#2a5200] hover:to-[#1e3d00] text-white px-4 py-2 rounded-lg flex items-center justify-center transition duration-200 text-sm min-h-[42px]"
                 >
                   <FaPlus className="sm:mr-2" />
                   <span className="hidden sm:inline">Add Category</span>
@@ -242,7 +242,7 @@ const Categories = () => {
                     placeholder="Search categories by name, slug, or description..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-9 pr-4 py-2 md:py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#996600] focus:border-transparent text-sm md:text-base"
+                    className="w-full pl-9 pr-4 py-2 md:py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#336600] focus:border-transparent text-sm md:text-base"
                   />
                 </div>
               </div>
@@ -253,7 +253,7 @@ const Categories = () => {
                 <select
                   value={sortOrder}
                   onChange={(e) => setSortOrder(e.target.value)}
-                  className="border border-slate-300 rounded-lg px-2 py-2 md:px-3 md:py-2.5 focus:outline-none focus:ring-2 focus:ring-[#996600] text-sm md:text-base w-full md:w-auto"
+                  className="border border-slate-300 rounded-lg px-2 py-2 md:px-3 md:py-2.5 focus:outline-none focus:ring-2 focus:ring-[#336600] text-sm md:text-base w-full md:w-auto"
                 >
                   <option value="newest">Newest First</option>
                   <option value="oldest">Oldest First</option>
@@ -266,7 +266,7 @@ const Categories = () => {
           <div className="bg-white shadow rounded-lg overflow-hidden">
             {loading ? (
               <div className="text-center py-8">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#996600] mx-auto"></div>
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#336600] mx-auto"></div>
                 <p className="mt-2 text-gray-600">Loading categories...</p>
               </div>
             ) : categoriesToRender.length === 0 ? (
@@ -344,7 +344,7 @@ const Categories = () => {
                               <div className="flex space-x-2">
                               <button
                                   onClick={() => openEditModal(category)}
-                                  className="bg-gradient-to-r from-[#996600] to-[#7a5200] hover:from-[#7a5200] hover:to-[#664200] text-white px-3 py-2 rounded text-sm font-medium transition duration-200 flex items-center"
+                                  className="bg-gradient-to-r from-[#336600] to-[#2a5200] hover:from-[#2a5200] hover:to-[#1e3d00] text-white px-3 py-2 rounded text-sm font-medium transition duration-200 flex items-center"
                               >
                                   Edit
                               </button>
@@ -395,7 +395,7 @@ const Categories = () => {
                             <div className="flex space-x-2">
                               <button
                                 onClick={() => openEditModal(category)}
-                                className="bg-gradient-to-r from-[#996600] to-[#7a5200] hover:from-[#7a5200] hover:to-[#664200] text-white px-3 py-2 rounded text-sm font-medium transition duration-200 flex items-center justify-center flex-1"
+                                className="bg-gradient-to-r from-[#336600] to-[#2a5200] hover:from-[#2a5200] hover:to-[#1e3d00] text-white px-3 py-2 rounded text-sm font-medium transition duration-200 flex items-center justify-center flex-1"
                               >
                                 Edit
                               </button>

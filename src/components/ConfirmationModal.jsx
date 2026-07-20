@@ -40,7 +40,7 @@ const ConfirmationModal = ({
             className={`px-4 py-2 rounded-md text-white transition-colors ${
               type === 'danger' 
                 ? 'bg-red-600 hover:bg-red-700' 
-                : 'bg-[#996600] hover:bg-[#7a5200]'
+                : 'bg-[#336600] hover:bg-[#2a5200]'
             }`}
           >
             {confirmText}
